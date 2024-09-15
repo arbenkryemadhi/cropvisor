@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: bold;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.main-wrapper {
+  display: flex;
+  background-color: #eeeeee;
+  height: 100vh;
+}
+
+.main-wrapper .bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1c1c;
+  background-size: calc(612px * 0.7) calc(413px * 0.7);
+  filter: grayscale(100%);
+}
+
+.bg::after {
+  content: "";
+  background-color: #00000057;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.crop-finder-form {
+  width: fit-content;
+  margin: auto;
+  background-color: white;
+  padding: 60px;
+  border-radius: 10px;
+  border: 1px solid #dfdfdf;
+  box-shadow: 0px 1px 10px #00000033;
+  z-index: 2;
+}
+
+.form-wrapper .button-wrapper {
+  padding-top: 45px;
+}
+
+.form-wrapper label {
+  padding-bottom: 7px;
+}
+
+.crop-finder-form .input-item + .input-item {
+  padding-left: 50px;
+}
+
+.form-wrapper input,
+.form-wrapper .btn {
+  padding: 6px;
+  border: 1px solid #e7e7e7;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  outline: none;
+}
+
+.crop-finder-form input,
+.location-wrapper {
+  width: 200px;
+}
+
+.form-wrapper input:focus,
+.form-wrapper .btn:focus {
+  box-shadow: 1px 1px 5px #e7e7e7;
+}
+
+.location-wrapper {
+  position: relative;
+}
+
+.crop-finder-form ::-webkit-input-placeholder {
+  font-style: italic;
+}
+
+.crop-finder-form :-moz-placeholder {
+  font-style: italic;
+}
+.crop-finder-form ::-moz-placeholder {
+  font-style: italic;
+}
+
+.crop-finder-form :-ms-input-placeholder {
+  font-style: italic;
+}
+
+/* 
+.crop-finder-form input {
+    background-color: #e6eee0;
+    border-color: #d2e1c7;
+} */
+
+.form-wrapper .btn-long {
+  padding: 7px 20px;
+}
+
+.crop-finder-form .btn {
+  color: white;
+  background-color: #278605;
+  border-color: #237d03;
+}
+
+.crop-finder-form .btn:active {
+  background-color: #237605;
+}
+
+.location-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 1px 4px #b6b6b6;
+  max-height: 230px;
+  overflow: auto;
+  display: none;
+}
+
+.location-suggestions.active {
+  display: block;
+}
+
+.location-suggestions > *:hover {
+  background-color: #ededed;
+  cursor: pointer;
+}
+
+.location-suggestions > * {
+  padding: 5px 10px;
+}
