@@ -6,10 +6,21 @@ html {
 }
 
 .backGround {
-  background-color: #2bbf96;
+  background-color: #1c1c1c;
   height: 100%;
   display: flex;
   justify-content: center;
+  padding-top: 60px;
+  background-image: url(../static/80628.webp);
+}
+
+.bgiq {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #00000094;
 }
 
 .hor {
@@ -348,13 +359,13 @@ td:first-child {
   padding-left: 0;
 }
 th:last-child,
-td:last-child {
+td:last-child { 
   padding-right: 0;
 }
 .invert-color hr {
   display: block;
   height: 1px;
-  background: rgba(98, 113, 131, 0.24);
+  background: #6271833d;
 }
 .invert-color tr {
   border-bottom: 1px solid rgba(98, 113, 131, 0.24);

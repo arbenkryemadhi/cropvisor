@@ -17,8 +17,8 @@
       href="{{ url_for('static', filename='findthecrop.css') }}"
     />
   </head>
-  <body>
-    <header class="site-header invert-color">
+  <body style="height: 70vh">
+    <header style="background-color: #1c1c1c" class="site-header invert-color">
       <div class="container">
         <div class="site-header-inner">
           <div class="brand">
@@ -60,10 +60,24 @@
         </div>
       </div>
     </header>
+    <div class="bgiq"></div>
     <div class="backGround">
-      <h1>Result: {{ result }}</h1>
+      <h1
+        style="
+          color: white;
+          vertical-align: middle;
+          height: fit-content;
+          margin: auto;
+          z-index: 1;
+        "
+      >
+        Result: {{ result }}
+      </h1>
     </div>
-    <footer class="site-footer center-content-mobile invert-color">
+    <footer
+      class="site-footer center-content-mobile invert-color"
+      style="background-color: #1c1c1c"
+    >
       <div class="container">
         <div class="site-footer-inner">
           <div class="footer-top space-between text-xxs">
